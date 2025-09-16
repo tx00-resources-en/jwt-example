@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
+// const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken"); // Import jwt module
 const saltRounds = 10;
 const requireAuth = require('./requireAuth')
