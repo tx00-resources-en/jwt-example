@@ -23,7 +23,6 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Failed to connect to MongoDB", err));
 
-
 // Define the protected route
 app.get("/api/protectedroute", requireAuth, async (req, res) => {
   // If the execution reaches here, it means the user is authenticated
