@@ -15,6 +15,7 @@ const createToken = (_id) => {
   return jwt.sign({ _id }, SECRET, { expiresIn: '3d' });
 }
 
+
 // Connect to MongoDB database
 mongoose
   .connect(
